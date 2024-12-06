@@ -1,0 +1,16 @@
+{
+  "name": "halyard-maybe",
+  "version": "0.0.1",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure maybe instance",
+  "source": "https://github.com/halyard/puppet-maybe",
+  "project_page": "https://github.com/halyard/puppet-maybe",
+  "issues_url": "https://github.com/halyard/puppet-maybe/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+
+  ]
+}
