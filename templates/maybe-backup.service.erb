@@ -1,0 +1,9 @@
+[Unit]
+Description=Run backup for maybe postgres
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/maybe-backup.sh <%= @datadir + '/backup' %>
+<% if @postgres_watchdog -%>
+ExecStartPost=/usr/bin/curl <%= @postgres_watchdog %>
+<% end -%>

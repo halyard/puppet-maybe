@@ -1,0 +1,9 @@
+[Unit]
+Description=Schedule backups for maybe postgres
+
+[Timer]
+OnBootSec=600
+OnUnitActiveSec=36000
+
+[Install]
+WantedBy=multi-user.target
