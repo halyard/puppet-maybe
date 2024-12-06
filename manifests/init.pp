@@ -14,6 +14,7 @@
 # @param backup_password sets the encryption key for backup snapshots
 # @param backup_environment sets the env vars to use for backups
 # @param backup_rclone sets the config for an rclone backend
+# @param postgres_watchdog sets the watchdog URL for postgres dumps
 class maybe (
   String $hostname,
   String $aws_access_key_id,
@@ -29,6 +30,7 @@ class maybe (
   Optional[String] $backup_password = undef,
   Optional[Hash[String, String]] $backup_environment = undef,
   Optional[String] $backup_rclone = undef,
+  Optional[String] $postgres_watchdog = undef,
 ) {
   file { [
       $datadir,
